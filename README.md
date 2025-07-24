@@ -101,11 +101,6 @@ I only test this example using libaom-av1. I'm on a crappy laptop
 | **2160p (4K)** | 30 fps     | 13,000–20,000 kbps | 6,500–12,000 kbps  |
 | **2160p (4K)** | 60 fps     | 20,000–35,000 kbps | 10,000–20,000 kbps |
 
-## References
-
-- [Recommended latest guide for fundamental out there](https://img.ly/blog/ultimate-guide-to-ffmpeg)
-- [ffmpeg](https://ffmpeg.org/ffmpeg.html)
-
 ## Sample Segmentation or Media Segmentation script
 
 ```bash

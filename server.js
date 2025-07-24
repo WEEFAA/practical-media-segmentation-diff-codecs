@@ -55,7 +55,6 @@ app.get(/^\/stream\/(.*)/, tiny, async (req, res, next) => {
     'Content-Type': mime,
   })
 
-  // pipe it
   await pipeline(createReadStream(filePath, { start, end }), res)
 })
 app.use(express.static('public', { acceptRanges: true }))
