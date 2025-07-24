@@ -2,6 +2,7 @@
   "name": "streaming-app",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node server.js"
   },
@@ -11,9 +12,11 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
+    "mime-types": "^3.0.1",
+    "morgan": "^1.10.1",
     "pug": "^3.0.3"
   },
   "engines": {
-    "node": ">=^20.19.2"
+    "node": ">=20.19.2"
   }
 }

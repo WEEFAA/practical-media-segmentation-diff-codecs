@@ -2,9 +2,15 @@ doctype html
 html 
   head 
   body 
-    <video controls width="600">
-        Your browser does not support the video tag.
-        <source src="/av1/stream.webm" type="video/webm">
-    </video>
+    <video id="video" controls width="600"></video>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.js"></script>
+    script.
+      const player = new shaka.Player(document.getElementById('video'));
+      player.load('/stream/av1/manifest.mpd');
+      player.addEventListener('error', e => {
+        console.error('Shaka Player Error:', e.detail)
+      })
+    br
+
     br
     <a href="..">Back</a>
