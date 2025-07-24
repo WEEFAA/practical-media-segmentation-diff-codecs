@@ -1,5 +1,14 @@
 ## 🎥 AV1 Codec — Summary & FFmpeg Relevance
 
+## How to run
+
+```bash
+npm run dev
+```
+
+Use network debugging tool to throttle and disable cache.
+[Note](./public/note.png)
+
 ### 🧠 What is AV1?
 
 - **AV1** is a next-generation, royalty-free video codec developed by the Alliance for Open Media (AOM).
@@ -90,6 +99,11 @@ ffmpeg -codecs | findstr av1
 | **1440p (2K)** | 60 fps     | 9,000–13,000 kbps  | 4,500–6,500 kbps   |
 | **2160p (4K)** | 30 fps     | 13,000–20,000 kbps | 6,500–12,000 kbps  |
 | **2160p (4K)** | 60 fps     | 20,000–35,000 kbps | 10,000–20,000 kbps |
+
+## References
+
+Friendly guide: [https://img.ly/blog/ultimate-guide-to-ffmpeg](https://img.ly/blog/ultimate-guide-to-ffmpeg)
+ffmpeg: [https://ffmpeg.org/ffmpeg.html](https://ffmpeg.org/ffmpeg.html)
 
 ## Sample Segmentation or Media Segmentation script
 
