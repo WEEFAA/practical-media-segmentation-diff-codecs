@@ -7,7 +7,8 @@ npm run dev
 ```
 
 Use network debugging tool to throttle and disable cache.
-[Note](./public/note.png)
+<img width="139" height="22" alt="image" src="https://github.com/user-attachments/assets/ce3ac6cb-2c9f-435e-9ff4-8e1f7b7a6631" />
+
 
 ### 🧠 What is AV1?
 
@@ -101,9 +102,8 @@ ffmpeg -codecs | findstr av1
 | **2160p (4K)** | 60 fps     | 20,000–35,000 kbps | 10,000–20,000 kbps |
 
 ## References
-
-Friendly guide: [https://img.ly/blog/ultimate-guide-to-ffmpeg](https://img.ly/blog/ultimate-guide-to-ffmpeg)
-ffmpeg: [https://ffmpeg.org/ffmpeg.html](https://ffmpeg.org/ffmpeg.html)
+- Friendly guide: [https://img.ly/blog/ultimate-guide-to-ffmpeg](https://img.ly/blog/ultimate-guide-to-ffmpeg)
+- ffmpeg: [https://ffmpeg.org/ffmpeg.html](https://ffmpeg.org/ffmpeg.html)
 
 ## Sample Segmentation or Media Segmentation script
 
