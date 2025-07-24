@@ -90,3 +90,18 @@ ffmpeg -codecs | findstr av1
 | **1440p (2K)** | 60 fps     | 9,000–13,000 kbps  | 4,500–6,500 kbps   |
 | **2160p (4K)** | 30 fps     | 13,000–20,000 kbps | 6,500–12,000 kbps  |
 | **2160p (4K)** | 60 fps     | 20,000–35,000 kbps | 10,000–20,000 kbps |
+
+## Sample Segmentation or Media Segmentation script
+
+```bash
+ffmpeg -i input.mp4 \
+  -map 0:v:0 -map 0:a:0 \
+  -c:v libaom-av1 -b:v 300k \
+  -c:a libopus -b:a 128k \
+  -f dash \
+  -seg_duration 4 \
+  -init_seg_name init-$RepresentationID$.m4s \
+  -media_seg_name chunk-$RepresentationID$-$Number$.m4s \
+  -use_timeline 0 -use_template 1 \
+  manifest.mpd
+```
