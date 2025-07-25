@@ -8,5 +8,8 @@ html
     script.
       const player = new shaka.Player(document.getElementById('video'));
       player.load('/stream/h264/manifest.mpd');
+      player.addEventListener('error', e => {
+        console.error('Shaka Player Error:', e.detail)
+      })
     br
     <a href="..">Back</a>
